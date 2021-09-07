@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ex01.Controller">
+   <children>
+      <Button layoutX="225.0" layoutY="153.0" mnemonicParsing="false" onAction="#viewProc" text="확인" />
+      <CheckBox fx:id="chkMusic" layoutX="78.0" layoutY="73.0" mnemonicParsing="false" text="음악" />
+      <RadioButton fx:id="rdoWoman" layoutX="100.0" layoutY="37.0" mnemonicParsing="false" text="여성">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup></RadioButton>
+      <ComboBox fx:id="cmbAge" layoutX="75.0" layoutY="111.0" prefWidth="150.0" promptText="연령대 선택" />
+      <Label layoutX="23.0" layoutY="31.0" prefHeight="28.0" prefWidth="29.0" text="성별" />
+      <Label layoutX="23.0" layoutY="67.0" prefHeight="28.0" prefWidth="29.0" text="성별" />
+      <Label layoutX="23.0" layoutY="108.0" prefHeight="28.0" prefWidth="29.0" text="성별" />
+      <RadioButton fx:id="rdoMan" layoutX="193.0" layoutY="37.0" mnemonicParsing="false" text="남성" toggleGroup="$gender" />
+      <CheckBox fx:id="chkSport" layoutX="145.0" layoutY="73.0" mnemonicParsing="false" text="스포츠" />
+      <CheckBox fx:id="chkMovie" layoutX="216.0" layoutY="73.0" mnemonicParsing="false" text="영화" />
+   </children>
+</AnchorPane>
